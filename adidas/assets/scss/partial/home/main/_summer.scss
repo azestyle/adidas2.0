@@ -1,0 +1,43 @@
+.summer-comp{
+   .container{
+    .row{
+        .summer-gr{
+            width: 83.33%;
+            margin: 0 auto;
+            margin-top: 10%;
+            margin-bottom: 5% ;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            .summer-box{
+               ul{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                cursor: pointer;
+                li{
+                    &:nth-of-type(1){
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+               }
+            }
+        }
+    }
+   }
+}
+
+@media (max-width: 960px){
+    .summer-comp{
+        .container{
+            .row{
+                .summer-gr{
+                    grid-template-columns: repeat(2, 1fr);
+                    row-gap: 50px;
+                }
+            }
+        }
+    }
+}

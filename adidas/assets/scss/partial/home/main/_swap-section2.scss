@@ -1,0 +1,123 @@
+.swap-section2{
+    .container{
+        .row{
+            .section2-tittle{
+                width: 83.33%;
+                margin: 0 auto;
+                margin-top: 5%;
+                display: flex;
+                justify-content: space-between;
+                
+                .slider-button{
+                   button{
+                    padding: 5px 10px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    &:nth-of-type(1){
+                        background-color: black;
+                        color: white;
+                    }
+                    &:nth-of-type(2){
+                        background-color: white;
+                        color: black;
+                        &:hover{
+                            background-color: black;
+                            color: white;
+                        }
+                    }
+                   }
+                }
+                p{
+                    cursor: pointer;
+                    &:hover{
+                        a{
+                            background-color: black;
+                            color: white;
+                        }
+                    }
+                    a{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.swap-section2{
+
+    .container{
+        .row{
+            .section2-slider{
+                width: 83.33%;
+               
+                margin: 0 auto;
+                margin-top: 50px;
+                position: relative;
+
+                .myswiper2{
+                    width: 100%;
+                    .swipers{
+                        display: grid;
+                        grid-template-columns: repeat(4,1fr);
+                        column-gap: 10px;
+
+                        .changes-box{
+                            cursor: pointer;
+                            &:hover{
+                                border: 1px solid black;
+                                .price-heart1{
+                                    span{
+                                        transform: translateY(-50%);
+                                    }
+                                }
+                               }
+                            .changes-img{
+                                position: relative;
+                                img{
+                                    width:100% ;
+                                }
+                                .price-heart1{
+                                 position: absolute;
+                                 z-index: 2;
+                                 width: 100%;
+                                 top: 0;
+                                 display: flex;
+                                 justify-content: space-between;
+
+                                 span{
+                                   margin: 95% 0 0 5%;
+                                   background-color: white;
+                                   font-weight: 200;
+                                   transition: 0.5s;
+                                 }
+                                 p{
+                                    margin: 10px;
+                                    height: fit-content;
+                                    &:hover{
+                                        svg{
+                                            fill: black;
+                                        }
+                                    }
+                                    svg{
+                                        fill: none;
+                                    }
+                                 }
+                                }
+                            }
+                            .swipers-write{
+                                padding-left: 10px;
+                                margin-bottom: 10px;
+                                p{
+                                    font-weight: 200;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

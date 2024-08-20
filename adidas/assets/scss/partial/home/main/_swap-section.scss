@@ -1,0 +1,90 @@
+.swap-section{
+    .container{
+        .row{
+            .swap-group{
+                width: 100%;
+                
+                position: relative;
+                margin: 0;
+                padding: 0;
+                  h1{
+                    font-size: 40px;
+                    font-weight: 400;
+                  }
+                .mySwiper{
+                    width: 100%;
+                    
+
+                    .myswip{
+                        display: grid;
+                        grid-template-columns: repeat(4,1fr);
+                        column-gap: 10px;
+                        .swip-box{
+                            cursor: pointer;
+                           &:hover{
+                            border: 1px solid black;
+                            .price-heart{
+                                span{
+                                    transform: translateY(-50%);
+                                }
+                            }
+                           }
+                            .box-img-s{
+                              position: relative;   
+                                img{
+                                    width: 100%;
+                                }
+                                .price-heart{
+                                 position: absolute;
+                                 top: 0;
+                                 left: 0;
+                                 width: 100%;
+                                 height: 100%;
+                                 z-index: 2;
+                                 display: flex;
+                                 justify-content: space-between;
+                                 pointer-events: none;
+                                 
+                                 span{
+                                    display: inline-block;
+                                    background-color: white;
+                                    height: fit-content;
+                                   margin: 95% 0 0 5%;
+                                     font-weight: 200;
+                                     transition: 0.5s;
+                                  
+                                 }
+                                 p{
+                                    margin: 10px;
+                                    height: fit-content;
+                                    pointer-events: auto;
+                                    &:hover{
+                                    .delete1{
+                                      display: none;
+                                    }     
+                                    .delete2{
+                                        display: block;
+                                    }
+                                    }
+                                   
+                                    .delete2{
+                                        fill: black;
+                                        display: none;
+                                    }
+                                 }
+                                }
+                            }
+                            .swipe-write{
+                                padding-left: 10px;
+                                margin-bottom: 10px;
+                                p{
+                                    font-weight: 200;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

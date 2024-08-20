@@ -1,0 +1,97 @@
+.last-list{
+    .container{
+        .row{
+            .ll-group{
+                width: 75%;
+                margin: 0 auto;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                display: flex;
+                gap: 3%;
+                .ll-box{
+                    &:nth-of-type(1){
+                        ul{
+                            li{
+                                &:nth-of-type(5){
+                                 margin-bottom: 15px;
+                                }
+                            }
+                        }
+                    }
+                    ul{
+                        li{
+                            &:nth-of-type(1){
+                                font-weight: 500;
+                                font-size: 18px;
+                                margin-bottom: 10px;
+                            }
+                            a{
+                                color: black;
+                                font-weight: 300;
+                                font-size: 14px;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                  
+                    &:last-of-type{
+                        ul{
+                            li{
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+                .d-none{
+                    display: block;
+                    .none-box{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 960px){
+    .last-list{
+        .container{
+            .row{
+                .ll-group{
+                    width: 100%;
+                    margin: 0;
+                    background-color: black;
+                   
+                    .ll-box{
+                        display: none;
+                    }
+                    .d-none{
+                        width: 100%;
+                        display: grid;
+                        margin: 30px 0;
+                        grid-template-columns: repeat(2,1fr);
+                      .none-box{
+                        width: 100%;
+                        display: block;
+                        ul{
+                            li{
+                                text-align: center;
+                                margin-bottom: 10px;
+                                a{
+                                    color: rgb(255, 255, 255);
+                                    font-size: 12px;
+                                    
+                                }
+                            }
+                        }
+                      }
+                    }
+                   
+                }
+            }
+        }
+    }
+}

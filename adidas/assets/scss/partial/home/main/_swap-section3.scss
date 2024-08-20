@@ -1,0 +1,136 @@
+.swap-section3{
+    .container{
+        .row{
+            .sec3-slider{
+                width: 100%;
+                margin: 0 auto;
+                margin-top: 50px;
+                display: none;
+                .myswiper3{
+                    width: 100% ;
+                    
+                    .swiper3{
+
+                     
+                        .swip-box{
+                      
+                            .imag-box{
+                                img{
+                                    width: 100%;
+                                    
+                                }
+                                video{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        .writer3{
+                            p{
+                           
+                              &:nth-of-type(1){
+                                   font-weight: 600;
+                              }
+                              &:nth-of-type(2){
+                               font-size: 13px;
+                               font-weight: 200;
+                               margin-bottom: 25px;
+                              }
+                              &:nth-of-type(3){
+                               
+                                margin-bottom: 50px;
+                                width: fit-content;
+                                cursor: pointer;
+                                &:hover{
+                                    span{
+                                        background-color: black;
+                                        color: white;
+                                        text-decoration: none;
+                                    }
+                                  }
+                              }
+                              span{
+                                text-decoration: underline;
+                              }
+
+                            }
+                        }
+                    }
+
+                  
+                }
+            }
+        }
+    }
+}
+
+.swap-section3{
+    .container{
+        .row{
+            .normal-box{
+                margin: 0 auto;
+                margin-top: 50px;
+                width: 83.33% ;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                column-gap: 10px;
+                .swip-box1{
+                    width: 100%;
+                    .imag-box1{
+                        img{
+                            width: 100%;
+                        }
+                        video{
+                            width: 100%;
+                        }
+                    }
+                    .writer31{
+                        p{
+                       
+                          &:nth-of-type(1){
+                               font-weight: 600;
+                          }
+                          &:nth-of-type(2){
+                           font-size: 13px;
+                           font-weight: 200;
+                           margin-bottom: 25px;
+                          }
+                          &:nth-of-type(3){
+                           
+                            margin-bottom: 50px;
+                            width: fit-content;
+                            cursor: pointer;
+                            &:hover{
+                                span{
+                                    background-color: black;
+                                    color: white;
+                                    text-decoration: none;
+                                }
+                              }
+                          }
+                          span{
+                            text-decoration: underline;
+                          }
+
+                        }
+                    
+                }
+            }
+        }
+    }
+}
+}
+
+@media (max-width: 960px){
+    .swap-section3{
+        .container{
+            .row{
+                .sec3-slider{
+                    display: block;
+                }
+                .normal-box{
+                    display: none;
+                }
+            }
+        }
+    }
+}

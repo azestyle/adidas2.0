@@ -1,0 +1,83 @@
+.popular{
+    .container{
+        .row{
+        .popular-tittle{
+            width: 83.33%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            h1{
+                font-size: 32px;
+                font-weight: 500;
+            }
+            .shooes-models{
+                margin-top: 3%;
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                column-gap: 50px;
+                row-gap: 30px;
+                margin-bottom: 50px;
+                .shooes-box{
+                    cursor: pointer;
+                    position: relative;
+                    &:hover{
+                        p{
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                top: 60px;
+                                bottom: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 5px;
+                                background-color: #000000;
+                            }
+                        }
+                    }
+                   
+                    p{
+                        font-size: 40px;
+                        font-weight: 500;
+
+                       &::before {
+                        content: "";
+                        position: absolute;
+                        top: 60px;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        background-color: #00000048;
+                      }  
+                    }
+                }
+            }
+        }
+        }
+    }
+}
+
+
+@media (max-width: 960px){
+    .popular{
+        .container{
+            .row{
+                .popular-tittle{
+                    h1{
+                     font-size: 22px;
+                    }
+                    .shooes-models{
+                        grid-template-columns: 1fr;
+                    .shooes-box{
+                        p{
+                            font-size: 36px;
+                        }
+                    }
+
+                    }
+                }
+            }
+        }
+    }
+}

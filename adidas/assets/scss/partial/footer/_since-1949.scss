@@ -1,0 +1,122 @@
+.black {
+    .container {
+        .row {
+            .black-bckground {
+                width: 100%;
+                background-color: black;
+
+                .black-writer {
+                    width: 41.66%;
+                    margin-top: 50px;
+                    margin: 0 auto;
+                    margin-top: 5%;
+                    text-align: left;
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    h2 {
+                        word-spacing: 10px;
+                        font-size: 26px;
+                        font-weight: 500;
+                        text-align: center;
+
+
+                    }
+
+                    p {
+
+
+                        font-weight: 300;
+                        text-align: justify;
+                        line-height: 22px;
+                    }
+                    .black-logo{
+                        width: 100%;
+                        margin: 5% 0 10% 0 ; 
+                    display: flex;
+                    justify-content: center;
+                    }
+                }
+            }
+            .yellow-bgr{
+                background-color: yellow;
+                width: 100%;
+               
+                .join-me{
+                    margin: 3% 0;
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    
+                    h1{
+                        font-size: 30px;
+                        font-weight: 500;
+                    }
+                    button{
+                       display: flex;
+                       justify-content: center;
+                       align-items:center ;
+                       gap: 5px;
+                       padding: 10px;
+                       color: white;
+                       background-color: black;
+                       transition: 0.5s;
+                       position: relative;
+                       svg{
+                        path{
+                            transition: 0.5s;
+                        }
+                       }
+                       &:hover{
+                        color: rgba(255, 255, 255, 0.503);
+                        svg{
+                            path{
+                                fill: rgba(255, 255, 255, 0.503);
+                            }
+                        }
+                       }
+                       p{
+                        font-size: 18px;
+                       }
+                      &::before{
+                        content:" ";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        border: 1px solid black;
+                        top: 3px;
+                        left: 3px;
+
+                      }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1350px){
+    .black{
+        .container{
+            .row{
+                .black-bckground{
+                    .black-writer{
+                        width: 91.66%;
+                       
+                    }
+                }
+                .yellow-bgr{
+                    .join-me{
+                        flex-direction: column;
+                        align-items: center;
+                        button{
+                            width: fit-content;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
